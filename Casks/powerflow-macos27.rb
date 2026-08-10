@@ -4,7 +4,7 @@ cask "powerflow-macos27" do
 
   url "https://github.com/dashdogy/macOS27/releases/download/v#{version}/powerflow_#{version}_aarch64.dmg"
   name "Powerflow macOS27"
-  desc "Monitor Mac and iOS power usage with macOS 27 battery support"
+  desc "Monitor device power usage and charging status"
   homepage "https://github.com/dashdogy/macOS27"
 
   livecheck do
@@ -13,7 +13,7 @@ cask "powerflow-macos27" do
   end
 
   depends_on arch: :arm64
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "powerflow.app"
 
